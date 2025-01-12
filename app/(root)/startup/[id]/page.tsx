@@ -34,6 +34,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
     }),
   ]);
 
+  // If no post is found, return 404 page
   if (!post) return notFound();
 
   const parsedContent = md.render(post?.pitch || "");
