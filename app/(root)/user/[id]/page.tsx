@@ -12,6 +12,8 @@ export const experimental_ppr = true;
 
 // Fetch data for the page using getServerSideProps or getStaticProps
 const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
+
+  //Const id is fetched from the params object which is a promise object
   const id = (await params).id;
   const session = await auth();
 
