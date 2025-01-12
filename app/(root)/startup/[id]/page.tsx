@@ -22,6 +22,8 @@ export const experimental_ppr = true;
 
 // Fetch data for the page using getServerSideProps or getStaticProps
 const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
+
+  // Fetch data for the page using getServerSideProps or getStaticProps
   const id = (await params).id;
 
   const [post, { select: editorPosts }] = await Promise.all([
