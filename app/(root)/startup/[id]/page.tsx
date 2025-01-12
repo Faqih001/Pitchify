@@ -17,6 +17,7 @@ import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 // Mark down it instance to render pitch content in html
 const md = markdownit();
 
+// Enable PPR for this page to test experimental feature
 export const experimental_ppr = true;
 
 const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
