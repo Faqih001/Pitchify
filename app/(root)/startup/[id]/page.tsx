@@ -40,6 +40,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   // Render the pitch content in html
   const parsedContent = md.render(post?.pitch || "");
 
+  // Return the page with the fetched data
   return (
     <>
       <section className="pink_container !min-h-[230px]">
