@@ -10,6 +10,7 @@ import { StartupCardSkeleton } from "@/components/StartupCard";
 // Enable PPR for this page to test experimental feature
 export const experimental_ppr = true;
 
+// Fetch data for the page using getServerSideProps or getStaticProps
 const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id;
   const session = await auth();
