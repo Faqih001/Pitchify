@@ -15,6 +15,8 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   //Const id is fetched from the params object which is a promise object
   const id = (await params).id;
+
+  // Session check to restrict access to the page if user is not logged in
   const session = await auth();
 
   const user = await client.fetch(AUTHOR_BY_ID_QUERY, { id });
