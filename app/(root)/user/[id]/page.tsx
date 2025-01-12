@@ -19,6 +19,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   // Session check to restrict access to the page if user is not logged in
   const session = await auth();
 
+  // If user is not logged in, redirect to home page using notFound function
   const user = await client.fetch(AUTHOR_BY_ID_QUERY, { id });
   if (!user) return notFound();
 
