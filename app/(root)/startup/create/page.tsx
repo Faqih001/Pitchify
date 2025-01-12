@@ -2,6 +2,7 @@ import StartupForm from "@/components/StartupForm";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
+// Enable PPR for this page to test experimental feature
 const Page = async () => {
   const session = await auth();
 
