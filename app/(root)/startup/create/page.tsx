@@ -11,6 +11,7 @@ const Page = async () => {
   // If user is not logged in, redirect to home page
   if (!session) redirect("/");
 
+  // Return the page with the fetched data
   return (
     <>
       <section className="pink_container !min-h-[230px]">
