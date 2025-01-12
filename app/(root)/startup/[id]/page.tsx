@@ -26,6 +26,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   // Fetch data for the page using getServerSideProps or getStaticProps
   const id = (await params).id;
 
+  //post is the startup data and editorPosts is the editor picks data
   const [post, { select: editorPosts }] = await Promise.all([
     client.fetch(STARTUP_BY_ID_QUERY, { id }),
     client.fetch(PLAYLIST_BY_SLUG_QUERY, {
