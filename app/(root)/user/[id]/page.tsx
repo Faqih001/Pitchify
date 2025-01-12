@@ -23,6 +23,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const user = await client.fetch(AUTHOR_BY_ID_QUERY, { id });
   if (!user) return notFound();
 
+  // Return the page with the fetched data
   return (
     <>
       <section className="profile_container">
