@@ -8,6 +8,7 @@ const Page = async () => {
   // Session check to restrict access to the page if user is not logged in
   const session = await auth();
 
+  // If user is not logged in, redirect to home page
   if (!session) redirect("/");
 
   return (
