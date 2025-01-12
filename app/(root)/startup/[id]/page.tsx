@@ -14,6 +14,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import View from "@/components/View";
 import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 
+// Mark down it instance to render pitch content in html
 const md = markdownit();
 
 export const experimental_ppr = true;
