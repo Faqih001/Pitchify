@@ -37,6 +37,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   // If no post is found, return 404 page
   if (!post) return notFound();
 
+  // Render the pitch content in html
   const parsedContent = md.render(post?.pitch || "");
 
   return (
