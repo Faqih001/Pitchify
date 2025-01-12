@@ -4,6 +4,7 @@ import { STARTUPS_QUERY } from "@/sanity/lib/queries";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 import { auth } from "@/auth";
 
+// Home page component that fetches all startups and displays them in a grid view
 export default async function Home({
   searchParams,
 }: {
