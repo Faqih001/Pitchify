@@ -35,6 +35,7 @@ const buttonVariants = cva(
   }
 )
 
+// The Button component is a wrapper around the Slot component
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
