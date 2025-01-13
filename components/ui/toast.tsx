@@ -44,6 +44,7 @@ const toastVariants = cva(
   },
 );
 
+// The Toast component is a wrapper around the ToastPrimitives.Root component
 const Toast = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Root>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Root> &
