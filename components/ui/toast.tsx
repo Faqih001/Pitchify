@@ -60,6 +60,7 @@ const Toast = React.forwardRef<
 });
 Toast.displayName = ToastPrimitives.Root.displayName;
 
+// The ToastAction component is a wrapper around the ToastPrimitives.Action component
 const ToastAction = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Action>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Action>
