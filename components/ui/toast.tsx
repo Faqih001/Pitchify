@@ -7,6 +7,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
+// The ToastProvider component is a wrapper around the ToastPrimitives.Provider component
 const ToastProvider = ToastPrimitives.Provider;
 
 const ToastViewport = React.forwardRef<
