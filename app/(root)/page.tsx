@@ -20,6 +20,7 @@ export default async function Home({
   // Get session data for user authentication
   const session = await auth();
 
+  // Log session ID
   console.log(session?.id);
 
   const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
