@@ -76,6 +76,7 @@ const ToastAction = React.forwardRef<
 ));
 ToastAction.displayName = ToastPrimitives.Action.displayName;
 
+// The ToastClose component is a wrapper around the ToastPrimitives.Close component
 const ToastClose = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Close>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Close>
