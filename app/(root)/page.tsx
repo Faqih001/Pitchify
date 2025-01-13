@@ -10,6 +10,8 @@ export default async function Home({
 }: {
   searchParams: Promise<{ query?: string }>;
 }) {
+
+  // Query for startups based on search query
   const query = (await searchParams).query;
   const params = { search: query || null };
 
