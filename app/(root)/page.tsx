@@ -17,6 +17,7 @@ export default async function Home({
   // Set search query as a parameter
   const params = { search: query || null };
 
+  // Get session data for user authentication
   const session = await auth();
 
   console.log(session?.id);
