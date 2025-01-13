@@ -13,6 +13,8 @@ export default async function Home({
 
   // Query for startups based on search query
   const query = (await searchParams).query;
+
+  // Set search query as a parameter
   const params = { search: query || null };
 
   const session = await auth();
