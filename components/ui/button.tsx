@@ -42,6 +42,7 @@ export interface ButtonProps
   asChild?: boolean
 }
 
+// The Button component is a wrapper around the Slot component
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
