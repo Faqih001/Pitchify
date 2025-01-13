@@ -26,6 +26,7 @@ export default async function Home({
   // Fetch all startups from Sanity Studio based on search query
   const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
 
+  // Return the home page component
   return (
     <>
       <section className="pink_container">
