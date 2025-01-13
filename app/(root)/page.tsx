@@ -23,6 +23,7 @@ export default async function Home({
   // Log session ID
   console.log(session?.id);
 
+  // Fetch all startups from Sanity Studio based on search query
   const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
 
   return (
