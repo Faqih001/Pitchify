@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 // The ToastProvider component is a wrapper around the ToastPrimitives.Provider component
 const ToastProvider = ToastPrimitives.Provider;
 
+// The ToastViewport component is a wrapper around the ToastPrimitives.Viewport component
 const ToastViewport = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Viewport>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Viewport>
