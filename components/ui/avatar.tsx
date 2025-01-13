@@ -34,6 +34,7 @@ const AvatarImage = React.forwardRef<
 ))
 AvatarImage.displayName = AvatarPrimitive.Image.displayName
 
+// The AvatarFallback component is a wrapper around the AvatarPrimitive.Fallback component
 const AvatarFallback = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Fallback>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>
