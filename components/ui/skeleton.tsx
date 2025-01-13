@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils"
 
+// The Skeleton component is a wrapper around the div element with some styles
 function Skeleton({
   className,
   ...props
