@@ -5,6 +5,8 @@ import {X} from "lucide-react";
 
 // The SearchFormReset component is a wrapper around the button element
 const SearchFormReset = () => {
+
+    // The reset function is used to reset the form
     const reset = () => {
         const form = document.querySelector('.search-form') as HTMLFormElement;
 
