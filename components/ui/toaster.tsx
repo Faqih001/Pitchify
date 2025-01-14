@@ -10,7 +10,10 @@ import {
   ToastViewport,
 } from "@/components/ui/toast"
 
+// The Toaster component is a wrapper around the ToastProvider component
 export function Toaster() {
+
+  //
   const { toasts } = useToast()
 
   return (
