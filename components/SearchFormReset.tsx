@@ -16,6 +16,7 @@ const SearchFormReset = () => {
         if(form) form.reset();
     }
 
+    // The SearchFormReset component returns the button element
     return (
         <button type="reset" onClick={reset} title="Reset Search Form">
             <Link href="/" className="search-btn text-white">
