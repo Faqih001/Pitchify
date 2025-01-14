@@ -8,6 +8,8 @@ const SearchFormReset = () => {
 
     // The reset function is used to reset the form
     const reset = () => {
+
+        // The form element is selected using the querySelector method
         const form = document.querySelector('.search-form') as HTMLFormElement;
 
         if(form) form.reset();
