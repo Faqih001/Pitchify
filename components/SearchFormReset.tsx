@@ -12,6 +12,7 @@ const SearchFormReset = () => {
         // The form element is selected using the querySelector method
         const form = document.querySelector('.search-form') as HTMLFormElement;
 
+        // The reset method is called on the form element
         if(form) form.reset();
     }
 
