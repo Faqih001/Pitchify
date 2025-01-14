@@ -3,6 +3,7 @@
 import Link from "next/link";
 import {X} from "lucide-react";
 
+// The SearchFormReset component is a wrapper around the button element
 const SearchFormReset = () => {
     const reset = () => {
         const form = document.querySelector('.search-form') as HTMLFormElement;
