@@ -16,6 +16,7 @@ export function Toaster() {
   // The useToast hook is used to get the toasts
   const { toasts } = useToast()
 
+  // The Toaster component returns the ToastProvider component
   return (
     <ToastProvider>
       {toasts.map(function ({ id, title, description, action, ...props }) {
