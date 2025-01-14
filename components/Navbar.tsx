@@ -6,6 +6,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 // The Navbar component is a wrapper around the header element
 const Navbar = async () => {
+
+  // The auth function is used to get the session object
   const session = await auth();
 
   return (
