@@ -1,5 +1,6 @@
 import React from "react";
 
+// The Ping component is a wrapper around the div element
 const Ping = () => {
   return (
     <div className="relative">
