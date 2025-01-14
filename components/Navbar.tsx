@@ -10,6 +10,7 @@ const Navbar = async () => {
   // The auth function is used to get the session object
   const session = await auth();
 
+  // The Navbar component returns the header element
   return (
     <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
