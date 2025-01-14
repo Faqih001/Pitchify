@@ -124,6 +124,7 @@ ToastDescription.displayName = ToastPrimitives.Description.displayName;
 // The ToastAction component is a wrapper around the ToastPrimitives.Action component
 type ToastProps = React.ComponentPropsWithoutRef<typeof Toast>;
 
+// The ToastActionElement component is a wrapper around the ToastAction component
 type ToastActionElement = React.ReactElement<typeof ToastAction>;
 
 export {
