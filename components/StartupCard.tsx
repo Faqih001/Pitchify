@@ -9,6 +9,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 // Startup card component that displays the startup details
 export type StartupTypeCard = Omit<Startup, "author"> & { author?: Author };
 
+// Startup card component with the startup details and the author details
 const StartupCard = ({ post }: { post: StartupTypeCard }) => {
   const {
     _createdAt,
