@@ -13,7 +13,7 @@ import {
 // The Toaster component is a wrapper around the ToastProvider component
 export function Toaster() {
 
-  //
+  // The useToast hook is used to get the toasts
   const { toasts } = useToast()
 
   return (
