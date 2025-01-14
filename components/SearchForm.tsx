@@ -2,6 +2,7 @@ import Form from "next/form";
 import SearchFormReset from "@/components/SearchFormReset";
 import {Search} from "lucide-react";
 
+// The SearchForm component is a wrapper around the form element
 const SearchForm = ({ query }: { query?: string }) => {
     return (
         <Form action="/" scroll={false} className="search-form">
