@@ -95,6 +95,7 @@ const StartupForm = () => {
     status: "INITIAL",
   });
 
+  // Return the startup form component
   return (
     <form action={formAction} className="startup-form">
       <div>
