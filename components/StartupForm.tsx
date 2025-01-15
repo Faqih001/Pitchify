@@ -54,6 +54,8 @@ const StartupForm = () => {
 
       // Display an error message if the form validation fails
       if (error instanceof z.ZodError) {
+
+        // Flatten the error and set the field errors
         const fieldErorrs = error.flatten().fieldErrors;
 
         setErrors(fieldErorrs as unknown as Record<string, string>);
