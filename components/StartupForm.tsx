@@ -51,6 +51,8 @@ const StartupForm = () => {
       // Return the result
       return result;
     } catch (error) {
+
+      // Display an error message if the form validation fails
       if (error instanceof z.ZodError) {
         const fieldErorrs = error.flatten().fieldErrors;
 
