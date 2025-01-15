@@ -32,6 +32,7 @@ const StartupForm = () => {
         pitch,
       };
 
+      // Parse the form data using the form schema
       await formSchema.parseAsync(formValues);
 
       const result = await createPitch(prevState, formData, pitch);
