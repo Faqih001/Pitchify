@@ -48,6 +48,7 @@ const StartupForm = () => {
         router.push(`/startup/${result._id}`);
       }
 
+      // Return the result
       return result;
     } catch (error) {
       if (error instanceof z.ZodError) {
