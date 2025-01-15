@@ -58,6 +58,7 @@ const StartupForm = () => {
         // Flatten the error and set the field errors
         const fieldErorrs = error.flatten().fieldErrors;
 
+        // Set the field errors
         setErrors(fieldErorrs as unknown as Record<string, string>);
 
         toast({
