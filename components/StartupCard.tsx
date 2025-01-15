@@ -70,6 +70,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
   );
 };
 
+// Startup card skeleton component that displays the skeleton of the startup card
 export const StartupCardSkeleton = () => (
   <>
     {[0, 1, 2, 3, 4].map((index: number) => (
