@@ -79,6 +79,7 @@ const StartupForm = () => {
         variant: "destructive",
       });
 
+      // Return the error state
       return {
         ...prevState,
         error: "An unexpected error has occurred",
