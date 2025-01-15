@@ -21,6 +21,8 @@ const StartupForm = () => {
 
   // Handle form submission and create a new startup pitch
   const handleFormSubmit = async (prevState: { error: string; status: string }, formData: FormData) => {
+
+    // Validate the form data using the form schema
     try {
       const formValues = {
         title: formData.get("title") as string,
