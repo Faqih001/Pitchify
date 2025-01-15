@@ -20,7 +20,7 @@ const StartupForm = () => {
   const router = useRouter();
 
   // Handle form submission and create a new startup pitch
-  const handleFormSubmit = async (prevState: any, formData: FormData) => {
+  const handleFormSubmit = async (prevState: { error: string; status: string }, formData: FormData) => {
     try {
       const formValues = {
         title: formData.get("title") as string,
