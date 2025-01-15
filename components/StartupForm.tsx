@@ -61,6 +61,7 @@ const StartupForm = () => {
         // Set the field errors
         setErrors(fieldErorrs as unknown as Record<string, string>);
 
+        // Display an error message
         toast({
           title: "Error",
           description: "Please check your inputs and try again",
