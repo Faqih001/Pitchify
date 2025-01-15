@@ -19,6 +19,7 @@ const StartupForm = () => {
   const { toast } = useToast();
   const router = useRouter();
 
+  // Handle form submission and create a new startup pitch
   const handleFormSubmit = async (prevState: any, formData: FormData) => {
     try {
       const formValues = {
