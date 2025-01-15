@@ -68,6 +68,7 @@ const StartupForm = () => {
           variant: "destructive",
         });
 
+        // Return the error state
         return { ...prevState, error: "Validation failed", status: "ERROR" };
       }
 
