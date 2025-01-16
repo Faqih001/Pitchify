@@ -9,6 +9,7 @@ const UserStartups = async ({ id }: { id: string }) => {
   // Fetch the startups created by the user
   const startups = await client.fetch(STARTUPS_BY_AUTHOR_QUERY, { id });
 
+  // Return the user startups component
   return (
     <>
       {startups.length > 0 ? (
