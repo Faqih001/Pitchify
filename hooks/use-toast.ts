@@ -29,6 +29,7 @@ const actionTypes = {
   REMOVE_TOAST: "REMOVE_TOAST",
 } as const
 
+// Counter for generating unique ids
 let count = 0
 
 function genId() {
