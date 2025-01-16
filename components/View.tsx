@@ -12,6 +12,7 @@ const View = async ({ id }: { id: string }) => {
     .withConfig({ useCdn: false })
     .fetch(STARTUP_VIEWS_QUERY, { id });
 
+  // Increment the views count of the startup pitch
   after(
     async () =>
       await writeClient
