@@ -32,6 +32,7 @@ const actionTypes = {
 // Counter for generating unique ids
 let count = 0
 
+// Function for generating unique ids
 function genId() {
   count = (count + 1) % Number.MAX_SAFE_INTEGER
   return count.toString()
