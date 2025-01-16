@@ -70,6 +70,8 @@ const toastTimeouts = new Map<string, ReturnType<typeof setTimeout>>()
 
 // Function for adding to the remove queue
 const addToRemoveQueue = (toastId: string) => {
+
+  // If the toast timeout has the toast id, then return
   if (toastTimeouts.has(toastId)) {
     return
   }
