@@ -5,6 +5,8 @@ import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 
 // User startups component that displays the startups created by the user
 const UserStartups = async ({ id }: { id: string }) => {
+
+  // Fetch the startups created by the user
   const startups = await client.fetch(STARTUPS_BY_AUTHOR_QUERY, { id });
 
   return (
