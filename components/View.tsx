@@ -4,6 +4,7 @@ import { STARTUP_VIEWS_QUERY } from "@/sanity/lib/queries";
 import { writeClient } from "@/sanity/lib/write-client";
 import { unstable_after as after } from "next/server";
 
+// View component that displays the total views of a startup pitch and increments the views count
 const View = async ({ id }: { id: string }) => {
   const { views: totalViews } = await client
     .withConfig({ useCdn: false })
