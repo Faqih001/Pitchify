@@ -21,6 +21,7 @@ const View = async ({ id }: { id: string }) => {
         .commit(),
   );
 
+  // Return the view component with the total views
   return (
     <div className="view-container">
       <div className="absolute -top-2 -right-2">
