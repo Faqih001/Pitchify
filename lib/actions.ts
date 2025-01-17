@@ -22,6 +22,7 @@ export const createPitch = async (
       status: "ERROR",
     });
 
+  // Destructure the title, description, category, and link from the form
   const { title, description, category, link } = Object.fromEntries(
     Array.from(form).filter(([key]) => key !== "pitch"),
   );
