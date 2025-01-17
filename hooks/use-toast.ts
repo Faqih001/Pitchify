@@ -204,6 +204,7 @@ function useToast() {
   // State for the toasts 
   const [state, setState] = React.useState<State>(memoryState)
 
+  // Function for the toast with the props and the id
   React.useEffect(() => {
     listeners.push(setState)
     return () => {
