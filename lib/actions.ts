@@ -60,6 +60,7 @@ export const createPitch = async (
   } catch (error) {
     console.log(error);
 
+    // Return the server action response with the error message and the status "ERROR"
     return parseServerActionResponse({
       error: JSON.stringify(error),
       status: "ERROR",
