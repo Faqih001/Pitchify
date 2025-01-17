@@ -48,6 +48,7 @@ export const createPitch = async (
       pitch,
     };
 
+    // Write the startup to the database and return the result with the startup
     const result = await writeClient.create({ _type: "startup", ...startup });
 
     return parseServerActionResponse({
