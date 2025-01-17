@@ -11,6 +11,8 @@ export const createPitch = async (
   form: FormData,
   pitch: string,
 ) => {
+
+  // Function for authenticating the session and returning the session
   const session = await auth();
 
   if (!session)
