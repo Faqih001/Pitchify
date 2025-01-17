@@ -167,6 +167,7 @@ function toast({ ...props }: Toast) {
   // Generate the id for the toast 
   const id = genId()
 
+  // Function for updating the toast with the props
   const update = (props: ToasterToast) =>
     dispatch({
       type: "UPDATE_TOAST",
