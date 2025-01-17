@@ -163,6 +163,8 @@ type Toast = Omit<ToasterToast, "id">
 
 // Function for the toast with the props and the id 
 function toast({ ...props }: Toast) {
+
+  // Generate the id for the toast 
   const id = genId()
 
   const update = (props: ToasterToast) =>
