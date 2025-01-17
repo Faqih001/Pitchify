@@ -150,6 +150,7 @@ const listeners: Array<(state: State) => void> = []
 // State for the toasts
 let memoryState: State = { toasts: [] }
 
+// Dispatch function for the action types and the action 
 function dispatch(action: Action) {
   memoryState = reducer(memoryState, action)
   listeners.forEach((listener) => {
