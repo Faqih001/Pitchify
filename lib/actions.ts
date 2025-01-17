@@ -30,6 +30,7 @@ export const createPitch = async (
   // Create a slug from the title with the lower and strict options
   const slug = slugify(title as string, { lower: true, strict: true });
 
+  // Try to create the startup with the title, description, category, link, slug with the current value, author with the reference, and pitch with the pitch value
   try {
     const startup = {
       title,
