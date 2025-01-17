@@ -190,6 +190,7 @@ function toast({ ...props }: Toast) {
     },
   })
 
+  // Return the id, dismiss, and update functions
   return {
     id: id,
     dismiss,
