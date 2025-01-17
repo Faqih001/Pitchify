@@ -215,6 +215,7 @@ function useToast() {
     }
   }, [state])
 
+  // Return the state with the toasts and the dismiss function
   return {
     ...state,
     toast,
