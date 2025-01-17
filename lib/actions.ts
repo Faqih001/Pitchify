@@ -27,6 +27,7 @@ export const createPitch = async (
     Array.from(form).filter(([key]) => key !== "pitch"),
   );
 
+  // Create a slug from the title with the lower and strict options
   const slug = slugify(title as string, { lower: true, strict: true });
 
   try {
