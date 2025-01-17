@@ -5,6 +5,7 @@ import { parseServerActionResponse } from "@/lib/utils";
 import slugify from "slugify";
 import { writeClient } from "@/sanity/lib/write-client";
 
+// Function for creating a pitch and returning the result with the title, description, category, link, and slug with the current value and the author with the reference and the pitch with the pitch value
 export const createPitch = async (
   state: any,
   form: FormData,
