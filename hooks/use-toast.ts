@@ -158,6 +158,7 @@ function dispatch(action: Action) {
   })
 }
 
+// Type for the toast with the id and the dismiss and update functions
 type Toast = Omit<ToasterToast, "id">
 
 function toast({ ...props }: Toast) {
