@@ -177,6 +177,7 @@ function toast({ ...props }: Toast) {
   // Function for dismissing the toast 
   const dismiss = () => dispatch({ type: "DISMISS_TOAST", toastId: id })
 
+  // Dispatch the action for adding the toast with the props and the id 
   dispatch({
     type: "ADD_TOAST",
     toast: {
