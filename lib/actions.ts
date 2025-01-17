@@ -15,6 +15,7 @@ export const createPitch = async (
   // Function for authenticating the session and returning the session
   const session = await auth();
 
+  // If there is no session, return the server action response with the error message "Not signed in" and the status "ERROR"
   if (!session)
     return parseServerActionResponse({
       error: "Not signed in",
