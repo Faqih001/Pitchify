@@ -1,5 +1,6 @@
 import { defineField, defineType } from "sanity";
 
+// Schema for the playlist type with the fields title, slug, and select with the reference to the startup type
 export const playlist = defineType({
   name: "playlist",
   title: "Playlists",
