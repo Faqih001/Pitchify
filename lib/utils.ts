@@ -3,6 +3,8 @@ import { twMerge } from "tailwind-merge";
 
 // function for twMerge and clsx to merge the classes together and return the result
 export function cn(...inputs: ClassValue[]) {
+
+  // return the result of twMerge with the result of clsx with the inputs
   return twMerge(clsx(inputs));
 }
 
