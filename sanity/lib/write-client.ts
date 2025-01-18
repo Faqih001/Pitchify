@@ -12,6 +12,7 @@ export const writeClient = createClient({
   token,
 });
 
+// Throw an error if the write token is not found
 if (!writeClient.config().token) {
   throw new Error("Write token not found.");
 }
