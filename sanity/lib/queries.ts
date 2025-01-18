@@ -82,6 +82,7 @@ export const STARTUPS_BY_AUTHOR_QUERY =
   image,
 }`);
 
+// Define the query for the startup with the title, slug, created at, author with the ID, name, image, and bio, views, description, category, image, and pitch
 export const PLAYLIST_BY_SLUG_QUERY =
   defineQuery(`*[_type == "playlist" && slug.current == $slug][0]{
   _id,
