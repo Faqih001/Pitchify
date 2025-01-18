@@ -1,5 +1,6 @@
 import { defineQuery } from "next-sanity";
 
+// Define the query for the startup with the title, slug, created at, author with the ID, name, image, and bio, views, description, category, and image
 export const STARTUPS_QUERY =
   defineQuery(`*[_type == "startup" && defined(slug.current) && !defined($search) || title match $search || category match $search || author->name match $search] | order(_createdAt desc) {
   _id, 
