@@ -1,6 +1,7 @@
 import { defineField, defineType } from "sanity";
 import { UserIcon } from "lucide-react";
 
+// Define the author type with the fields id, name, username, email, image, and bio and the preview title schema
 export const author = defineType({
   name: "author",
   title: "Author",
