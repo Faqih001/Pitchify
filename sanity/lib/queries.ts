@@ -53,6 +53,7 @@ export const AUTHOR_BY_GITHUB_ID_QUERY = defineQuery(`
 }
 `);
 
+// Define the query for the startup with the title, slug, created at, author with the ID, name, image, and bio, views, description, category, image, and pitch
 export const AUTHOR_BY_ID_QUERY = defineQuery(`
 *[_type == "author" && _id == $id][0]{
     _id,
