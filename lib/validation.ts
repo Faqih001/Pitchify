@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+// The formSchema object is a schema for form validation with the title, description, category, link, and pitch fields
 export const formSchema = z.object({
   title: z.string().min(3).max(100),
   description: z.string().min(20).max(500),
