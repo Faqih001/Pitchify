@@ -3,6 +3,7 @@ import "server-only";
 import { createClient } from "next-sanity";
 import { apiVersion, dataset, projectId, token } from "../env";
 
+// Create a client with the project ID, dataset, API version, and CDN
 export const writeClient = createClient({
   projectId,
   dataset,
