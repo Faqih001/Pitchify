@@ -16,6 +16,7 @@ export const STARTUPS_QUERY =
   image,
 }`);
 
+// Define the query for the startup with the title, slug, created at, author with the ID, name, image, and bio, views, description, category, image, and pitch
 export const STARTUP_BY_ID_QUERY =
   defineQuery(`*[_type == "startup" && _id == $id][0]{
   _id, 
