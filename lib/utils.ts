@@ -10,6 +10,8 @@ export function cn(...inputs: ClassValue[]) {
 
 // function for formatting the date with the date string and returning the result
 export function formatDate(date: string) {
+
+  // return the result of new Date with the date and toLocaleDateString with the options
   return new Date(date).toLocaleDateString("en-US", {
     month: "long",
     day: "numeric",
