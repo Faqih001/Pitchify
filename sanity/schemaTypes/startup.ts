@@ -1,5 +1,6 @@
 import { defineField, defineType } from "sanity";
 
+// Schema for the startup type with the fields title, slug, author, views, description, category, image, and pitch
 export const startup = defineType({
   name: "startup",
   title: "Startup",
