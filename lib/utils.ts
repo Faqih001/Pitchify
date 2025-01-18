@@ -19,6 +19,7 @@ export function formatDate(date: string) {
   });
 }
 
+// function for formatting the date with the date string and returning the result
 export function parseServerActionResponse<T>(response: T) {
   return JSON.parse(JSON.stringify(response));
 }
